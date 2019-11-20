@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+
+
 
     >
 
@@ -12,6 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="12dp"
+        android:background="@drawable/background"
+
 
 
         >
@@ -24,6 +29,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:elevation="4dp"
             android:src="@drawable/arrow"
             app:layout_constraintEnd_toStartOf="@+id/profile_image2"
             app:layout_constraintHorizontal_bias="0.5"
@@ -34,10 +40,12 @@
             android:id="@+id/profile_image2"
             android:layout_width="48dp"
             android:layout_height="48dp"
-
             android:layout_marginStart="8dp"
+
+
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:elevation="4dp"
             android:src="@drawable/captain"
             app:layout_constraintEnd_toStartOf="@+id/profile_image3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -47,11 +55,13 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image3"
             android:layout_width="48dp"
-
             android:layout_height="48dp"
+
+
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:elevation="4dp"
             android:src="@drawable/fury"
             app:layout_constraintEnd_toStartOf="@+id/profile_image4"
             app:layout_constraintHorizontal_bias="0.5"
@@ -61,11 +71,13 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image4"
             android:layout_width="48dp"
-
             android:layout_height="48dp"
+
+
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
+            android:elevation="4dp"
             android:src="@drawable/hulk"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -75,11 +87,12 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image5"
             android:layout_width="48dp"
-
             android:layout_height="48dp"
+
             android:layout_marginStart="48dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
+            android:elevation="4dp"
             android:src="@drawable/ironman"
             app:layout_constraintEnd_toStartOf="@+id/profile_image6"
             app:layout_constraintHorizontal_bias="0.5"
@@ -90,10 +103,11 @@
             android:id="@+id/profile_image6"
             android:layout_width="48dp"
             android:layout_height="48dp"
-
             android:layout_marginStart="8dp"
+
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
+            android:elevation="4dp"
             android:src="@drawable/scarlet"
             app:layout_constraintEnd_toStartOf="@+id/profile_image7"
             app:layout_constraintHorizontal_bias="0.5"
@@ -105,6 +119,8 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
+            android:elevation="4dp"
+
 
             android:layout_marginTop="24dp"
             android:layout_marginEnd="48dp"

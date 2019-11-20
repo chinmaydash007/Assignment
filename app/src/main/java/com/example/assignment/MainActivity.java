@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,9 +36,7 @@ Dialog dialog;
             public void onClick(View view) {
                 dialog.setContentView(R.layout.avenger_dialog);
                 cardView=dialog.findViewById(R.id.cardview);
-                cardView.setBackgroundResource(R.drawable.background);
                 dialog.setCancelable(false);
-                dialog.show();
                 dismiss=dialog.findViewById(R.id.dismiss);
                 enter=dialog.findViewById(R.id.enter);
 
@@ -52,12 +52,15 @@ Dialog dialog;
                         dialog.dismiss();
                     }
                 });
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
 
 
 
 
             }
         });
+
 
     }
 }
